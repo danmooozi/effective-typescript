@@ -73,7 +73,7 @@ type C = A | B;
 * 런타임 타입은 선언되 타입과 다를 수 있습니다
     * API와 같은 외부 의존성이 생긴 경우, 외부에서 제대로 된 값을 주지 않으면 달라진 수 있음
 
-> 💡 동일한 이름에 매개 변수만 다른 여러 버전의 함수를 만드는 것.
+> 💡 함수 오버로딩이란? 동일한 이름에 매개 변수만 다른 여러 버전의 함수를 만드는 것.
 > arrow function은 오버로딩을 할 수 없다.
 > [[예시](https://lakelouise.tistory.com/194)]
 
@@ -83,3 +83,63 @@ type C = A | B;
 * 타입스크립트 타입은 런타임 성능에 영향을 주지 않습니다
     * 빌드 타임엔 영향을 줌
 
+## 뒷장 그냥 정리
+
+### 아이템4 구조적 타이핑에 익숙해지기
+
+> 💡 덕 타이핑이란?
+> 객체가 어떤 타입에 부합하는 변수와 메서드를 가질 경우 객체를 해당 타입에 속하는 것으로 간주하는 방식
+
+* 자스는 덕 타이핑 기반입니다.
+
+* 아래의 경우 NamedVector 타입의 변수로도 함수를 사용할 수 있다.
+
+```ts
+interface Vector {
+    x: number;
+    y: number;
+}
+
+interface NamedVector {
+    x: number; 
+    y: number;
+    name: string;
+}
+
+function cal(v: Vector) Math.sqrt(v.x * v.x + v.y * v.y);
+```
+
+* 이런 것을 타입이 열려(open)있다고 표현함
+
+* 아래의 경우, 타입이 열려있기 때문에 axis가 어떤 값을 가질 지 몰라서 엘리먼트는 암시적으로 any 타입이 됨
+
+```ts
+function cal1(v:Vector3D) {
+    let length = 0;
+    for (const axis of Object.keys(v)) {
+        const coord = v[axis];
+        length += Math.abs(coord);
+    }
+    return length;
+}
+```
+
+* 테스트를 작성할 때는 이 특성 때문에 구조적 타이핑이 유리
+  * 사용되는 메서드만 대충 모킹할 수 있으니까.
+
+### 아이템5 any 타입 지양하기
+
+* any 타입에는 안전성이 없습니다.
+    * `age='12'; age += 1`
+    * age가 "121"
+
+* any는 함수 시그니처를 무시해 버립니다.
+  * 약속된 타입을 무시하고 넣을 수 있음
+
+* any 타입에는 언어 서비스가 적용되지 않습니다.
+
+* any 타입은 코드 리팩터링 때 버그를 감춥니다.
+
+* any는 타입 설계를 감춰버립니다.
+
+* any는 타입시스템의 신뢰도를 떨어뜨립니다.
