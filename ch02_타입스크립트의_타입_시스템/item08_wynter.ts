@@ -36,3 +36,24 @@ const C = () => {
       const H = Hi['hello'];
       type B = Hi.Bye;
 }
+
+interface Room {
+	numDoors: number;
+	ceilingHeightFt?: number;
+}
+const r:Room = {
+	numDoors: 1,
+	ceilingHeightFt: 10,
+	elephant: 'present'
+} // Room에 elephant가 없음
+
+const otps = { numDoors: 1, elephant: 'gg'};
+const top = { log: 1 }
+const a:Room = otps;
+const b:Room = top;
+
+async function checkedFetch(input: RequestInfo, init?:RequestInit): Promise<Response> {
+	const res = await fetch(input, init);
+	if(!res.ok) throw new Error('requestFailed: ' + res.status);
+	return res;
+}
