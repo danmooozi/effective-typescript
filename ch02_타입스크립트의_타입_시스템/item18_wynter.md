@@ -17,6 +17,7 @@ function arraySum(arr:number[]) {
 	return sum;
 }
 ```
+
 * 배열의 합을 순서대로 출력하는 코드인데, 원본 배열을 변경하게 됨
 * arraySum이 배열을 변경하지 않는다는 선언을 하려면 `number[]` 대신 `readolny number[]`를 사용하면 됨.
   * 배열의 요소를 읽을 수 있지만, 쓸 수는 없습니다.
@@ -31,7 +32,93 @@ function arraySum(arr:number[]) {
 
 * 매개변수 변경이 일어나지 않는다면 명시적으로 readonly를 주는 것이 좋음
   * readonly로 선언되지 않은 함수를 쓸 일이 생긴다면 타입 단언을 써야함.. 첨부터 걍 쭉 readonly로 써주는 것이 좋음
-// 96p 이어서하기..
+  * 지역 변수와 관련된 모든 종류의 변경 오류를 방지할 수 있음
+
+```ts
+function parseTaggedText(lines: string[]): string[][] {
+	const paragraphs: string[][] = [];
+	const currPara: string[] = [];
+
+	const addParagraph = () => {
+		if(currPara.length) {
+			paragraphs.push(currPara); // 참조값 그대로 넣어버리면 어떡함? ;;
+			currPara.length = 0;
+		}
+	}
+	for (const line of lines) {
+		if(!line) addParagraph();
+		else currPara.push(line);
+	}
+	addParagraph();
+	return paragraphs;
+}
+```
+
+* currPara 배열을 직접 변경하려고 해서 생긴 문제이므로 currPara에 readonly를 넣자.
+* 바꿈으로써 생긴 에러에 대한 해결법
+  * 해결법 1. currPara의 복사본을 paragraphs에 넣으면 됨
+  * 해결법 2. pargraphs도 readonly로 하면 됨
+  * 해결법 3. push할 때만단언문을 쓰면 됨
+
+* DeepReadonly가 아닌 이상, readonly 에 담긴 내용물 자체는 변경 가능한 값임.
+
+---
+
+# 아이템 18 매핑된 타입을 사용하여 값을 동기화하기
+
+```ts
+interface ScatterProps {
+	//the data
+	xs: number[];
+	ys: number[];
+
+	//Display
+	xRange: [number, number];
+	yRange: [number, number];
+	color: string;
+
+	//Events
+	onClick: (x:nubmer, y:number, index:number) => void;
+}
+```
+
+* 이벤트 핸들러 변경시에는 리렌더링할 필요가 없음. 최적화 구현을 위한 함수 구현은 아래
+
+```ts
+function shouldUpdate (old: ScatterProps, new: ScatterProp) {
+	let k: keyofScatterProps;
+	for(k in oldProps) {
+		if(oldProps[k] !== newProps[k]) {
+			if(k!=='onClick') return true;
+		}
+	}
+	return false;
+}
+```
+
+* 값이 변경될 때마다 차트가 다시 그려질 것인데, 이것을 보수적(conservative) 접근법(=실패에 닫힌(fail close)) 접근법 이라고 함.
+  * 정확하지만 너무 자주 그려질 가능성
+
+```ts
+const REQUIRES_UPDATE: {[k in keyof ScatterProps]: boolean} = {
+	xs:true,
+	...
+	onClick: false,
+}
+function shouldUpdate (old: ScatterProps, new: ScatterProp) {
+	let k: keyofScatterProps;
+	for(k in oldProps) {
+		if(oldProps[k] !== newProps[k] && REQUIRES_UPDATE[k]) {
+			return true;
+		}
+	}
+	return false;
+}
+```
+
+* 위 코드처럼 짬으로써 값과 타입 동기화 가능
+
+---
 
 ## 그냥 정리
 
@@ -47,3 +134,13 @@ function arraySum(arr:number[]) {
 * 자스에서는 가능했던 암시적 변환 중, 키를 number로 하던 string으로 하던 string이 되던 것이 타스에서는 타입체커가 잡아줌
 * 타입이 불확실하면 for-in루프는 for-of 또는 c스타일 for에 비해 몇배는 느림
 * for-in < for-of < forEach 순으로 쓰자.
+
+### 아이템19 추론 가능한 타입을 사용해 장황한 코드 방지하기
+
+* 모든 변수에 타입을 선언하는 것은 비생산적이며 형편없는 스타일로 여겨짐!
+  * 타입 추론이 된다면 명시적 타입 구문은 필요하지 않습니다.
+  * 그런데 추론이 되더라도 객체 리터럴과 함수 반환에는 타입 명시를 고려해야함
+
+### 아이템20 다른 타입에는 다른 변수 사용하기
+
+* 맥스 맨날 쉬운거걸리네..
