@@ -1,5 +1,8 @@
 # effective-typescript
-Effective TypeScript 북 스터디 📚
+[Effective TypeScript](https://product.kyobobook.co.kr/detail/S000001033114) 북 스터디 📚
+
+![image](https://github.com/danmooozi/effective-typescript/assets/5876149/867d34e1-cc75-4d49-9d03-fa126875e3a5)
+
 
 ### 📝 스터디 규칙
 
