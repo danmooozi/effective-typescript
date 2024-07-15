@@ -61,4 +61,8 @@
 | --- | --- | --- | --- |
 | 19 | [추론 가능한 타입을 사용해 장황한 코드 방지하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item19_lia.md) | 24.07.01 | 오시연 |
 | 20 | [다른 타입에는 다른 변수 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item20_mono.md) | 24.07.01 | 김원호(이찬형) |
-
+| 21 | [타입 넓히기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item21_mono.md) | 24.07.08 | 김원호 |
+| 22 | [타입 좁히기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item22_eden.md) | 24.07.08 | 김영호 |
+| 23 | [한꺼번에 객체 생성하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item23_wynter.md) | 24.07.08 | 김수빈 |
+| 24 | [일관성 있는 별칭 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item24_lia.md) | 24.07.08 | 오시연 |
+| 25 | [비동기 코드에는 콜백 대신 async 함수 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item25_max.md) | 24.07.08 | 이찬형 |
