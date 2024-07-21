@@ -66,3 +66,13 @@
 | 23 | [한꺼번에 객체 생성하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item23_wynter.md) | 24.07.08 | 김수빈 |
 | 24 | [일관성 있는 별칭 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item24_lia.md) | 24.07.08 | 오시연 |
 | 25 | [비동기 코드에는 콜백 대신 async 함수 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item25_max.md) | 24.07.08 | 이찬형 |
+| 26 | [타입 추론에 문맥이 어떻게 사용되는지 이해하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item26_mono.md) | 24.07.15 | 김원호 |
+| 27 | [아이템27 함수형 기법과 라이브러리로 타입 흐름 유지하기](https://github.com/danmooozi/effective-typescript/blob/main/ch03_%ED%83%80%EC%9E%85_%EC%B6%94%EB%A1%A0/item27_eden.md) | 24.07.15 | 김영호 |
+
+**Chapter 04**
+
+| Item | Discussion | Date | Assignee |
+| --- | --- | --- | --- |
+| 28 | [유효한 상태만 표현하는 타입을 지향하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item28_wynter.md) | 24.07.15 | 김수빈 |
+| 29 | [사용할 때는 너그럽게, 생성할 때는 엄격하게](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item29_lia.md) | 24.07.15 | 오시연 |
+| 30 | [문서에 타입 정보를 쓰지 않기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item30_max.md) | 24.07.15 | 이찬형 |
