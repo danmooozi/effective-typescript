@@ -76,3 +76,8 @@
 | 28 | [유효한 상태만 표현하는 타입을 지향하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item28_wynter.md) | 24.07.15 | 김수빈 |
 | 29 | [사용할 때는 너그럽게, 생성할 때는 엄격하게](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item29_lia.md) | 24.07.15 | 오시연 |
 | 30 | [문서에 타입 정보를 쓰지 않기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item30_max.md) | 24.07.15 | 이찬형 |
+| 31 | [타입 주변에 null 값 배치하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item31_mono.md) | 24.07.22 | 김원호 |
+| 32 | [유니온의 인터페이스보다는 인터페이스의 유니온 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item32_eden.md) | 24.07.22 | 김영호 |
+| 33 | [string 타입보다 더 구체적인 타입 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item33_wynter.md) | 24.07.22 | 김수빈 |
+| 34 | [부정확한 타입보다는 미완성 타입을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item34_lia.md) | 24.07.22 | 오시연 |
+| 35 | [데이터가 아닌, API와 명세를 보고 타입 만들기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item35_max.md) | 24.07.22 | 이찬형 |
