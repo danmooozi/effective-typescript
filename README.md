@@ -81,3 +81,13 @@
 | 33 | [string 타입보다 더 구체적인 타입 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item33_wynter.md) | 24.07.22 | 김수빈 |
 | 34 | [부정확한 타입보다는 미완성 타입을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item34_lia.md) | 24.07.22 | 오시연 |
 | 35 | [데이터가 아닌, API와 명세를 보고 타입 만들기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item35_max.md) | 24.07.22 | 이찬형 |
+| 36 | [해당 분야의 용어로 타입 이름 짓기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item36_mono.md) | 24.07.22 | 김원호 |
+| 37 | [공식 명칭에는 상표를 붙이기](https://github.com/danmooozi/effective-typescript/blob/main/ch04_%ED%83%80%EC%9E%85_%EC%84%A4%EA%B3%84/item37_eden.md) | 24.07.31 | 김영호 |
+
+**Chapter 05**
+
+| Item | Discussion | Date | Assignee |
+| --- | --- | --- | --- |
+| 38 | [any 타입은 가능한 한 좁은 범위에서만 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item38_wyter.md) | 24.07.31 | 김수빈 |
+| 39 | [any를 구체적으로 변형해서 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item39_lia.md) | 24.07.31 | 오시연 |
+| 40 | [함수 안으로 타입 단언문 감추기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item40_max.md) | 24.08.08 | 이찬형 |
