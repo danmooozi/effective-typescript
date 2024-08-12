@@ -90,4 +90,19 @@
 | --- | --- | --- | --- |
 | 38 | [any 타입은 가능한 한 좁은 범위에서만 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item38_wyter.md) | 24.07.31 | 김수빈 |
 | 39 | [any를 구체적으로 변형해서 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item39_lia.md) | 24.07.31 | 오시연 |
-| 40 | [함수 안으로 타입 단언문 감추기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item40_max.md) | 24.08.08 | 이찬형 |
+| 40 | [any의 진화를 이해하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item41_mono.md) | 24.08.08 | 이찬형 |
+| 41 | [함수 안으로 타입 단언문 감추기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item42_eden.md) | 24.08.13 | 김원호 |
+| 42 | [모르는 타입의 값에는 any 대신 unknown을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item42_eden.md) | 24.08.08 | 김영호 |
+| 43 | [몽키 패치보다는 안전한 타입을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item43_wynter.md) | 24.08.08 | 김수빈 |
+| 44 | [타입 커버리지를 추적하여 타입 안정성 유지하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item44_lia.md) | 24.08.08 | 오시연 |
+
+**Chapter 06**
+
+| Item | Discussion | Date | Assignee |
+| --- | --- | --- | --- |
+| 45 | [any 타입은 가능한 한 좁은 범위에서만 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item45_max.md) | 24.08.08 | 이찬형 |
+| 46 | [타입 선언과 관련된 세 가지 버전 이해하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item46_mono.md) | 24.08.13 | 김원호 |
+| 47 | [공개 API에 등장하는 모든 타입을 익스포트하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item47_eden.md) | 24.08.13 | 김영호 |
+| 48 | [API 주석에 TSDoc 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item48_wynter.md) | 24.08.13 | 김수빈 |
+| 49 | [콜백에서 this에 대한 타입 제공하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item49_lia.md) | 24.08.13 | 오시연 |
+| 50 | [오버로딩 타입보다는 조건부 타입을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch05_any_%EB%8B%A4%EB%A3%A8%EA%B8%B0/item50_max.md) | 24.08.13 | 이찬형 |
