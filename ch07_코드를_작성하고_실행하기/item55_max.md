@@ -26,8 +26,7 @@ function handleDrag(eDown: Event) {
 const div = document.getElementById("surface");
 div.addEventListener("mousedown", handleDrag);
 ```
-
-![스크린샷 2024-08-18 오후 11.34.16.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/fef31b45-5ba1-48ad-8b81-f071e47abdeb/ea2b1def-931c-4be4-843e-1d46fa2a7a1b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-18_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_11.34.16.png)
+<img width="706" alt="스크린샷 2024-08-19 오전 12 06 49" src="https://github.com/user-attachments/assets/135e0f18-c6fb-4781-9563-03b26951e419">
 
 - 오류가 많이 나타난다.
 
