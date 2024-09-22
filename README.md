@@ -106,3 +106,25 @@
 | 48 | [API 주석에 TSDoc 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch06_%ED%83%80%EC%9E%85_%EC%84%A0%EC%96%B8%EA%B3%BC_%40types/item48_wynter.md) | 24.08.13 | 김수빈 |
 | 49 | [콜백에서 this에 대한 타입 제공하기](https://github.com/danmooozi/effective-typescript/blob/main/ch06_%ED%83%80%EC%9E%85_%EC%84%A0%EC%96%B8%EA%B3%BC_%40types/item49_lia.md) | 24.08.13 | 오시연 |
 | 50 | [오버로딩 타입보다는 조건부 타입을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch06_%ED%83%80%EC%9E%85_%EC%84%A0%EC%96%B8%EA%B3%BC_%40types/item50_max.md) | 24.08.13 | 이찬형 |
+| 51 | [의존성 분리를 위해 미러 타입 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch06_%ED%83%80%EC%9E%85_%EC%84%A0%EC%96%B8%EA%B3%BC_%40types/item51_mono.md) | 24.08.19 | 김원호 |
+| 52 | [테스팅 타입의 함정에 주의하기](https://github.com/danmooozi/effective-typescript/blob/main/ch06_%ED%83%80%EC%9E%85_%EC%84%A0%EC%96%B8%EA%B3%BC_%40types/item52_eden.md) | 24.08.19 | 김영호 |
+
+**Chapter 07**
+
+| Item | Discussion | Date | Assignee |
+| --- | --- | --- | --- |
+| 53 | [타입스크립트 기능보다는 ECMAScript 기능을 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch07_%EC%BD%94%EB%93%9C%EB%A5%BC_%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0_%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/item53_wynter.md) | 24.08.19 | 김수빈 |
+| 54 | [객체를 순회하는 노하우](https://github.com/danmooozi/effective-typescript/blob/main/ch07_%EC%BD%94%EB%93%9C%EB%A5%BC_%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0_%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/item54_lia.md) | 24.08.19 | 오시연 |
+| 55 | [DOM 계층 구조 이해하기](https://github.com/danmooozi/effective-typescript/blob/main/ch07_%EC%BD%94%EB%93%9C%EB%A5%BC_%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0_%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/item55_max.md) | 24.08.19 | 이찬형 |
+| 56 | [정보를 감추는 목적으로 private 사용하지 않기](https://github.com/danmooozi/effective-typescript/blob/main/ch07_%EC%BD%94%EB%93%9C%EB%A5%BC_%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0_%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/item56_mono.md) | 24.08.26 | 김원호 |
+| 57 | [소스맵을 사용하여 타입스크립트 디버깅하기](https://github.com/danmooozi/effective-typescript/blob/main/ch07_%EC%BD%94%EB%93%9C%EB%A5%BC_%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0_%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/item57_eden.md) | 24.08.26 | 김영호 |
+
+**Chapter 08**
+
+| Item | Discussion | Date | Assignee |
+| --- | --- | --- | --- |
+| 58 | [모던 자바스크립트로 작성하기](https://github.com/danmooozi/effective-typescript/blob/main/ch08_타입스크립트로_마이그레이션하기/item58_wynter.md) | 24.08.26 | 김수빈 |
+| 59 | [타입스크립트 도입 전에 @ts-check와 JsDoc으로 시험해 보기](https://github.com/danmooozi/effective-typescript/blob/main/ch08_타입스크립트로_마이그레이션하기/item59_lia.md) | 24.08.26 | 오시연 |
+| 60 | [allowJs로 타입스크립트와 자바스크립트 같이 사용하기](https://github.com/danmooozi/effective-typescript/blob/main/ch08_타입스크립트로_마이그레이션하기/item60_max.md) | 24.08.26 | 이찬형 |
+| 61 | [의존성 관계에 따라 모듈 단위로 전환하기](https://github.com/danmooozi/effective-typescript/blob/main/ch08_타입스크립트로_마이그레이션하기/item61_mono.md) | 24.08.26 | 김원호 |
+| 62 | [마이그레이션의 완성을 위해 noImplicitAny 설정하기](https://github.com/danmooozi/effective-typescript/blob/main/ch08_타입스크립트로_마이그레이션하기/item62_eden.md) | 24.08.26 | 김영호 |
