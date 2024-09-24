@@ -3,6 +3,7 @@
 
 ![image](https://github.com/danmooozi/effective-typescript/assets/5876149/867d34e1-cc75-4d49-9d03-fa126875e3a5)
 
+24.06.10 ~ 24.08.26 고생하셨습니다
 
 ### 📝 스터디 규칙
 
